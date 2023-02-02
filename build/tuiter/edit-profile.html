@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit Profile</title>
-    <script>
-      function setFocusToTextBox(){
-      document.getElementById("name").focus();
-    }
-    </script>
 </head>
 <body>
-  <a href="navigation.html">Back</a>
+  <a href="profile.html">Back</a>
   <h1>Tuiter</h1>
   <h2>Edit Profile</h2>
   <a href="edit-profile.html">Save</a>
@@ -20,7 +15,7 @@
   <input type="file" name="updateOwnerImg" /> <br/>
   <hr/>
   <form>
-    <label onclick="setFocusToTextBox()">Name</label>
+    <label for="name">Name</label>
     <input type="text" id="name" placeholder="Name" value="WebDev" />
   </form>
   <hr/>
