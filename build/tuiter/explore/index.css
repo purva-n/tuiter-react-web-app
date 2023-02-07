@@ -1,0 +1,81 @@
+.wd-search-bar{
+    color: white;
+}
+
+.wd-settings-gear {
+    float: right;
+    margin-right: 12px;
+}
+
+wd-grid-row{
+    clear: both;
+}
+
+.wd-search-box{
+    width: 96%;
+    background-color: darkgray;
+    border-radius: 12px;
+}
+
+.wd-tabs{
+    border-bottom-style: solid;
+    border-bottom-color: rgb(47, 51, 54);
+}
+
+.wd-search-result{
+    color: white;
+    border-left-style: solid;
+    border-left-color: rgb(47, 51, 54);
+}
+
+.grid-item {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+    background-color: transparent;
+}
+
+.wd-selected{
+    color: rgb(29,161,242);
+    border-bottom: rgb(29,161,242);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.wd-topic{
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    margin-left: 12px;
+}
+
+.wd-title{
+    margin-left: 12px;
+}
+
+td{
+    padding: 12px;
+}
+
+td.post{
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    color: white;
+    margin-left: 12px;
+    font-size: 13px;
+}
+
+.wd-post-topic{
+    margin-left: 12px;
+    font-size: medium;
+}
+
+img{
+    float: right;
+    border-radius: 10px;
+    margin-right: 16px;
+}

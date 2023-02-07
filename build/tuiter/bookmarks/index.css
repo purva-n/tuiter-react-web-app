@@ -1,0 +1,86 @@
+.wd-heading {
+    border-left-color: rgb(47, 51, 54);
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1px;
+}
+
+.wd-title {
+    margin-left: 16px;
+    margin-top: 12px;
+    color: white;
+    font-size: 20px;
+}
+
+.wd-handle {
+    margin-left: 16px;
+    color: lightgray;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.wd-post {
+    display: inline-block;
+    color: white;
+    border-left-style: solid;
+    border-left-color: rgb(47, 51, 54);
+    border-bottom-style: solid;
+    border-bottom-color: rgb(47, 51, 54);
+}
+
+.wd-profileimg {
+    float: left;
+    border-radius: 50px;
+    margin-left: 16px;
+    margin-top: 12px;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-author-name {
+    margin-left: 12px;
+    margin-top: 12px;
+    font-size: 15px;
+    color: white;
+}
+
+.wd-author-handle {
+    margin-left: 12px;
+    margin-top: 12px;
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-content {
+    margin-left: 16px;
+    color: white;
+    width: 506px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.wd-content-img {
+    display: block;
+    width: 504px;
+    height: 264px;
+    border-radius: 12px;
+    margin-left: 62px;
+    margin-top: 12px;
+}
+
+.wd-foot-content-title {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    width: 506px;
+    margin-left: 61px;
+}
+
+.wd-foot-content {
+    display: block;
+    max-width: 506px;
+    color: lightgray;
+    font-size: 15px;
+    margin-left: 66px;
+}
