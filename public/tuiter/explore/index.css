@@ -12,8 +12,7 @@ wd-grid-row{
 }
 
 .wd-search-box{
-    width: 96%;
-    background-color: darkgray;
+    width: 90%;
     border-radius: 12px;
 }
 
@@ -67,6 +66,10 @@ td.post{
     color: white;
     margin-left: 12px;
     font-size: 13px;
+}
+
+div.container{
+    border: black;
 }
 
 .wd-post-topic{
