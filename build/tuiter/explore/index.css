@@ -12,20 +12,13 @@ wd-grid-row{
 }
 
 .wd-search-box{
-    width: 96%;
-    background-color: darkgray;
+    width: 90%;
     border-radius: 12px;
 }
 
 .wd-tabs{
     border-bottom-style: solid;
     border-bottom-color: rgb(47, 51, 54);
-}
-
-.wd-search-result{
-    color: white;
-    border-left-style: solid;
-    border-left-color: rgb(47, 51, 54);
 }
 
 .grid-item {
@@ -50,32 +43,72 @@ wd-grid-row{
 .wd-topic{
     font-size: 13px;
     color: rgb(110, 118, 125);
-    margin-left: 12px;
 }
 
-.wd-title{
-    margin-left: 12px;
-}
-
-td{
-    padding: 12px;
-}
-
-td.post{
-    border-style: solid;
-    border-color: rgb(47, 51, 54);
-    color: white;
-    margin-left: 12px;
+li.post{
     font-size: 13px;
+    font-weight: bold !important;
+}
+
+div.container{
+    border: black;
 }
 
 .wd-post-topic{
-    margin-left: 12px;
     font-size: medium;
+    font-weight: bold !important;
 }
 
 img{
     float: right;
     border-radius: 10px;
     margin-right: 16px;
+}
+
+ul.list-group {
+    border-color: transparent;
+}
+
+div.card {
+    margin-top: 16px !important;
+}
+
+.wd-title-follow {
+    font-weight: bold !important;
+}
+
+.wd-handle-follow {
+    font-size: 12px;
+}
+
+.wd-display-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.wd-who-to {
+    font-weight: bolder; !important;
+}
+
+.wd-follow {
+    float: right;
+    border-radius: 15px;
+}
+
+.list-group-item {
+    border-color: transparent !important;
+}
+
+.list-group {
+    background-color: transparent !important;
+}
+
+.ul.li.nav-tabs.wd-active {
+    border-bottom-color: dodgerblue;
+}
+
+.follow, .navigation {
+    height: fit-content;
 }
