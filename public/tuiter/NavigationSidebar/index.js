@@ -3,9 +3,9 @@ const NavigationSidebar = (active) => {
    <div class="list-group">
      <a class="list-group-item" href="/">
        <i class="fab fa-twitter"></i></a>
-     <a class="list-group-item" id="home" ${isActive(active)}  href="../HomeScreen/index.html">
+     <a class="list-group-item" id="home" ${isActive(active)}  href="../homescreen/index.html">
        <i class="fa fa-home"></i> Home</a>
-     <a class="list-group-item" id="explore" ${isActive(active)} href="../ExploreScreen/index.html">
+     <a class="list-group-item" id="explore" ${isActive(active)} href="../explorescreen/index.html">
        <i class="fa fa-hashtag"></i> Explore</a>
      <a class="list-group-item" id="notifications" ${isActive(active)} href="/">
       <i class="fa fa-bell"></i> Notifications</a>
