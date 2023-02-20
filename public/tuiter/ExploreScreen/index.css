@@ -112,3 +112,13 @@ div.card {
 .follow, .navigation {
     height: fit-content;
 }
+
+.wd-info {
+    color: darkgray;
+}
+
+.card#post {
+    border-width: thin;
+    border-color: lightsteelblue;
+    border-radius: 12px;
+}
