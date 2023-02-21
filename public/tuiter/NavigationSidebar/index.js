@@ -3,19 +3,19 @@ const NavigationSidebar = (active) => {
    <div class="list-group">
      <a class="list-group-item" href="/">
        <i class="fab fa-twitter"></i></a>
-     <a class="list-group-item" id="home"  href="../homescreen/index.html">
+     <a id="home" class="list-group-item ${isActive(active)}"   href="../homescreen/index.html">
        <i class="fa fa-home"></i> Home</a>
-     <a class="list-group-item" id="explore" href="../explorescreen/index.html">
+     <a id="explore" class="list-group-item ${isActive(active)}"  href="../explorescreen/index.html">
        <i class="fa fa-hashtag"></i> Explore</a>
-     <a class="list-group-item" id="notifications" href="/">
+     <a id="notifications" class="list-group-item ${isActive(active)}" href="/">
       <i class="fa fa-bell"></i> Notifications</a>
-     <a class="list-group-item" id="messages" href="/">
+     <a id="messages" class="list-group-item ${isActive(active)}"  href="/">
       <i class="fa fa-envelope"></i> Messages</a>
-     <a class="list-group-item" id="bookmarks" href="../bookmarks/index.html">
+     <a id="bookmarks" class="list-group-item ${isActive(active)}"  href="../bookmarks/index.html">
        <i class="fa fa-bookmark"></i> Bookmarks</a>
-     <a class="list-group-item" id="lists" href="/">
+     <a id="lists" class="list-group-item ${isActive(active)}"  href="/">
        <i class="fa fa-list"></i> Lists</a>
-     <a class="list-group-item" id="profile" href="../profile.html">
+     <a id="profile" class="list-group-item ${isActive(active)}" href="../profile.html">
        <i class="fa fa-user"></i> Profile</a>
    </div>
    <div class="d-grid mt-2">
@@ -28,14 +28,24 @@ const NavigationSidebar = (active) => {
 }
 
 function isActive(active) {
-    switch (active) {
-        case 'home':  $('#home').addClass('active'); break;
-        case 'explore':  $('#explore').addClass('active'); break;
-        case 'notifications':  $('#notifications').addClass('active'); break;
-        case 'messages':  $('#messages').addClass('active'); break;
-        case 'bookmarks':  $('#bookmarks').addClass('active'); break;
-        case 'lists':  $('#lists').addClass('active'); break;
-        case 'profile':  $('#profile').addClass('active'); break;
+    const homeActive =  $('#home')._getId() === active;
+    const exploreActive =  $('#explore')._getId() === active;
+    const notificationsActive =  $('#notifications')._getId() === active;
+    const messagesActive =  $('#messages')._getId() === active;
+    const bookmarksActive =  $('#bookmarks')._getId() === active;
+    const listsActive =  $('#lists')._getId() === active;
+    const profileActive =  $('#profile')._getId() === active;
+
+
+    switch (true) {
+        case homeActive: return 'active';
+        case exploreActive:  return 'active';
+        case notificationsActive:  return 'active';
+        case messagesActive: return 'active';
+        case listsActive:  return 'active';
+        case profileActive:  return 'active';
+        case bookmarksActive:  return 'active';
+        default: return '';
     }
 }
 export default NavigationSidebar;
