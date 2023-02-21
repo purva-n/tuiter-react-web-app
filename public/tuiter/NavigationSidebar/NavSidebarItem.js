@@ -10,7 +10,7 @@ const NavSidebarItem = (sidebar, active) => {
                     ${icon}
                 </div>
                 <div class="d-none d-xl-inline col-xl-10">
-                    ${sidebar.name}
+                    ${sidebar.name ? sidebar.name[0].toUpperCase() + sidebar.name.slice(1) : ""}
                 </div>
             </div>
         </a>
