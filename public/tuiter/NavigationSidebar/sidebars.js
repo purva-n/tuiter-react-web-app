@@ -31,7 +31,7 @@ export default sidebars = [
         name: "messages",
     },
     {
-        source: "/",
+        source: "../bookmarks/index.html",
         iconMain: "fas fa-bookmark",
         iconSub: "",
         name: "bookmarks",
@@ -43,7 +43,7 @@ export default sidebars = [
         name: "lists",
     },
     {
-        source: "/",
+        source: "../profile.html",
         iconMain: "fas fa-user",
         iconSub: "",
         name: "profile",
