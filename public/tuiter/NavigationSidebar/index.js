@@ -28,7 +28,8 @@ const NavigationSidebar = (active) => {
 
 function isActive(active) {
    switch(active) {
-       case $('#home').attr('id'): return 'active';
+       // eslint-disable-next-line no-undef
+       case $('#home').attr('id'): console.log('active'); return 'active';
        case $('#explore').attr('id'): return 'active';
        case $('#notifications').attr('id'): return 'active';
        case $('#messages').attr('id'): return 'active';
