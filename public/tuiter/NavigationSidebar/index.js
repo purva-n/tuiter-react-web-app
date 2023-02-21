@@ -1,5 +1,3 @@
-import {scryRenderedComponentsWithType} from "react-dom/test-utils";
-
 const NavigationSidebar = (active) => {
     return(`
    <div class="list-group">
