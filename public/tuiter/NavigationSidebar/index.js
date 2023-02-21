@@ -1,3 +1,5 @@
+import {scryRenderedComponentsWithType} from "react-dom/test-utils";
+
 const NavigationSidebar = (active) => {
     return(`
    <div class="list-group">
@@ -23,29 +25,19 @@ const NavigationSidebar = (active) => {
         class="btn btn-primary btn-block rounded-pill">
         Tweet</a>
    </div>
-   ${isActive(active)}
  `);
 }
 
 function isActive(active) {
-    const homeActive =  $('#home').attr('id') === active;
-    const exploreActive =  $('#explore').attr('id') === active;
-    const notificationsActive =  $('#notifications').attr('id') === active;
-    const messagesActive =  $('#messages').attr('id') === active;
-    const bookmarksActive =  $('#bookmarks').attr('id') === active;
-    const listsActive =  $('#lists').attr('id') === active;
-    const profileActive =  $('#profile').attr('id') === active;
-
-
-    switch (true) {
-        case homeActive: return 'active';
-        case exploreActive:  return 'active';
-        case notificationsActive:  return 'active';
-        case messagesActive: return 'active';
-        case listsActive:  return 'active';
-        case profileActive:  return 'active';
-        case bookmarksActive:  return 'active';
-        default: return '';
-    }
+   switch(active) {
+       case $('#home').attr('id'): return 'active';
+       case $('#explore').attr('id'): return 'active';
+       case $('#notifications').attr('id'): return 'active';
+       case $('#messages').attr('id'): return 'active';
+       case $('#bookmarks').attr('id'): return 'active';
+       case $('#lists').attr('id'): return 'active';
+       case $('#profile').attr('id'): return 'active';
+       default: return '';
+   }
 }
 export default NavigationSidebar;
