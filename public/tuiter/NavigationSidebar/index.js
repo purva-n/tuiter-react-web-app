@@ -3,19 +3,19 @@ const NavigationSidebar = (active) => {
    <div class="list-group">
      <a class="list-group-item" href="/">
        <i class="fab fa-twitter"></i></a>
-     <a class="list-group-item" id="home" ${isActive(active)}  href="../homescreen/index.html">
+     <a class="list-group-item" id="home"  href="../homescreen/index.html">
        <i class="fa fa-home"></i> Home</a>
-     <a class="list-group-item" id="explore" ${isActive(active)} href="../explorescreen/index.html">
+     <a class="list-group-item" id="explore" href="../explorescreen/index.html">
        <i class="fa fa-hashtag"></i> Explore</a>
-     <a class="list-group-item" id="notifications" ${isActive(active)} href="/">
+     <a class="list-group-item" id="notifications" href="/">
       <i class="fa fa-bell"></i> Notifications</a>
-     <a class="list-group-item" id="messages" ${isActive(active)} href="/">
+     <a class="list-group-item" id="messages" href="/">
       <i class="fa fa-envelope"></i> Messages</a>
-     <a class="list-group-item" id="bookmarks" ${isActive(active)} href="../bookmarks/index.html">
+     <a class="list-group-item" id="bookmarks" href="../bookmarks/index.html">
        <i class="fa fa-bookmark"></i> Bookmarks</a>
-     <a class="list-group-item" id="lists" ${isActive(active)} href="/">
+     <a class="list-group-item" id="lists" href="/">
        <i class="fa fa-list"></i> Lists</a>
-     <a class="list-group-item" id="profile" ${isActive(active)} href="../profile.html">
+     <a class="list-group-item" id="profile" href="../profile.html">
        <i class="fa fa-user"></i> Profile</a>
    </div>
    <div class="d-grid mt-2">
@@ -23,6 +23,7 @@ const NavigationSidebar = (active) => {
         class="btn btn-primary btn-block rounded-pill">
         Tweet</a>
    </div>
+   ${isActive(active)}
  `);
 }
 
