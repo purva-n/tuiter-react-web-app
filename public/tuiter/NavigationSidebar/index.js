@@ -28,13 +28,13 @@ const NavigationSidebar = (active) => {
 }
 
 function isActive(active) {
-    const homeActive =  $('#home')._getId() === active;
-    const exploreActive =  $('#explore')._getId() === active;
-    const notificationsActive =  $('#notifications')._getId() === active;
-    const messagesActive =  $('#messages')._getId() === active;
-    const bookmarksActive =  $('#bookmarks')._getId() === active;
-    const listsActive =  $('#lists')._getId() === active;
-    const profileActive =  $('#profile')._getId() === active;
+    const homeActive =  $('#home').attr('id') === active;
+    const exploreActive =  $('#explore').attr('id') === active;
+    const notificationsActive =  $('#notifications').attr('id') === active;
+    const messagesActive =  $('#messages').attr('id') === active;
+    const bookmarksActive =  $('#bookmarks').attr('id') === active;
+    const listsActive =  $('#lists').attr('id') === active;
+    const profileActive =  $('#profile').attr('id') === active;
 
 
     switch (true) {
