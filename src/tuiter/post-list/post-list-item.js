@@ -19,7 +19,7 @@ const PostListItem = ({
         <li className="list-group-item">
             <div className="row">
                 <div className="col-1">
-                    <img className="wd-display-pic" src={`/images/${post.profileImg}`}/>
+                    <img alt="profileImg" className="wd-display-pic" src={`/images/${post.profileImg}`}/>
                 </div>
                 <div className="col-11 ml-2">
                     <div>
@@ -30,7 +30,7 @@ const PostListItem = ({
                         <span>{post.topic}</span>
                     </div>
                     <div className="card border-2 border-light ml-2" id="post">
-                        <img className="card-img-top" src={`/images/${post.image}`} width={100}/>
+                        <img alt="postimage" className="card-img-top" src={`/images/${post.image}`} width={100}/>
                         <div className="card-body">
                             <span>{post.caption_title ? post.caption_title : ''}</span><br/>
                             <span className="wd-info">{post.caption ? post.caption : ''}</span>
