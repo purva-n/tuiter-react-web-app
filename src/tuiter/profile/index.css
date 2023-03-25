@@ -1,0 +1,28 @@
+div.container{
+    border: black;
+}
+
+.wd-big-bold {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.wd-handle {
+    color: darkgray;
+}
+
+.wd-pictures {
+    position: relative;
+    display: inline-block;
+}
+
+.wd-profile {
+    position: absolute !important;
+    bottom: -50px !important;
+    left: 10px !important;
+    border-radius: 50%;
+}
+
+.wd-edit-profile {
+    height: fit-content;
+}

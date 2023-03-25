@@ -1,7 +1,8 @@
 import React from "react";
-import postItems from "./postItems.json";
+import {useSelector} from "react-redux";
 import PostListItem from "./post-list-item";
 const PostList = () => {
+    const postItems = useSelector((state) => state.posts);
     return(
         <div>
             <ul className="list-group">

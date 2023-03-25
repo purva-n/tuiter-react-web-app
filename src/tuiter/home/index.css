@@ -40,3 +40,7 @@ div.container{
     border-color: lightsteelblue;
     border-radius: 12px;
 }
+
+.fa_red {
+    color: red
+}

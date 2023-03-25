@@ -1,0 +1,44 @@
+[
+  {
+    "_id" : 123,
+    "topic": "Amazing show about @inspiration4x mission",
+    "userName": "Elon Musk",
+    "handle": "elonmusk",
+    "title" : "",
+    "tuit" : "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
+    "time": "23h",
+    "image": "elon.png",
+    "comment": 123,
+    "retuits": 1459,
+    "likes": 8976,
+    "liked": true
+  },
+  {
+    "_id" : 234,
+    "topic": "Tesla is making bullet-proof cyber trucks?",
+    "userName": "Tesla",
+    "handle": "tesla",
+    "time": "Jun 24",
+    "title": "",
+    "tuit" : "More updates: \n- Glass roof now weighs less & lets in 5x more light with same level of UV protection. This also improves handling as it helps low center of gravity\n\n- Plaid S & X come with improved brake pads with higher thermal capacity = better overall braking performance\n\n- Round steering wheel now an option",
+    "image": "tesla.png",
+    "comment": 567,
+    "retuits": 1688,
+    "likes": 790,
+    "liked": true
+  },
+  {
+    "_id" : 345,
+    "topic": "Artificial Intelligence is so imagined in our daily lives, even if we don't realize it. What exactly is it, though?",
+    "userName": "WebMD",
+    "handle": "WebMD",
+    "time": "Jun 22",
+    "title": "",
+    "tuit" : "The middle-aged woman who had HIV but has been in remission after receiving an umbilical cord stem cell transplant more than five years ago for her leukemia is now considered “possibly cured.",
+    "image": "webmdlogo.svg",
+    "comment": 67,
+    "retuits": 4532,
+    "likes": 678,
+    "liked": true
+  }
+]
