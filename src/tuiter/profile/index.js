@@ -16,7 +16,7 @@ const ProfileComponent = () => {
             <div className="row">
                 <div className="col-1"><a href="/tuiter/explore"><i className="fa fa-2x fa-arrow-left"></i></a></div>
                 <div className="col-10">
-                    <div className="fw-bold fs-3">{profile.firstName} {profile.lastName}</div>
+                    <div className="fw-bold fs-3">{profile.name}</div>
                     <div className="fw-light fs-6">{profile.tuits} Tuits</div>
                 </div>
             </div>
@@ -31,7 +31,7 @@ const ProfileComponent = () => {
                 </button>
             </div>
             <div>
-                <p><span className="fw-bold fs-3">{profile.firstName} {profile.lastName}</span> <br/><span
+                <p><span className="fw-bold fs-3">{profile.name}</span> <br/><span
                     className="fw-light">{profile.handle}</span></p>
                 <p className="fw-light">{profile.bio}</p>
             </div>

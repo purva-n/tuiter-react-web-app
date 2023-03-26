@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 const profile = {
-        firstName: 'Purva', lastName: 'Nartam', handle: '@nartamp',
+        name: 'Purva Nartam', handle: '@nartamp',
         profilePicture: 'owner.png', 	bannerPicture: 'banner.jpg',
         bio: 'Student, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements.',
         website: 'youtube.com/webdevtv',
@@ -12,8 +12,17 @@ const profile = {
 
 const profileSlice = createSlice({
     name: 'profile',
-    initialState: profile
+    initialState: profile,
+    reducers: {
+        saveChange(state, action) {
+            state.name = action.payload.name;
+            state.bio = action.payload.bio
+            state.website = action.payload.website;
+            state.location = action.payload.location;
+            state.dateOfBirth = action.payload.dateOfBirth;
+        }
+    }
 });
 
-//export const {addTodo, deleteTodo, todoDoneToggle} = profileSlice.actions;
-export default profileSlice.reducer
+export const {saveChange} = profileSlice.actions;
+export default profileSlice.reducer;
