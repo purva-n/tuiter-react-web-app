@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {likeunlike} from "./tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 const TuitStats = ({
                        tuit = {
                            "topic": "Artificial Intelligence is so ingained in our daily lives, even if we don't realize it. What exactly is it, though?",
@@ -21,7 +21,22 @@ const TuitStats = ({
     const dispatch = useDispatch();
 
     const likeunlikepost = (tuit) => {
-        dispatch(likeunlike(tuit));
+        let updateTuit = {};
+        if(!tuit.liked) {
+            updateTuit = {
+                ...tuit,
+                likes: tuit.likes + 1,
+                liked: true
+            };
+        }else {
+            updateTuit = {
+                ...tuit,
+                likes: tuit.likes - 1,
+                liked: false
+            };
+        }
+
+        dispatch(updateTuitThunk(updateTuit))
     }
 
     return(

@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 const profile = {
-        name: 'Purva Nartam', handle: '@nartamp',
+        name: 'Purva Nartam', handle: 'nartamp',
         profilePicture: 'owner.png', 	bannerPicture: 'banner.jpg',
         bio: 'Student, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements.',
         website: 'youtube.com/webdevtv',

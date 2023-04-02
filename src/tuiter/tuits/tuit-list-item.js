@@ -1,7 +1,7 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitListItem = ({
                           tuit = {
@@ -22,14 +22,14 @@ const TuitListItem = ({
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return(
     <li className="list-group-item">
             <div className="row">
                 <div className="col-auto">
-                    <img alt="profileImg" className="wd-display-pic" src={`/images/${tuit.image}`}/>
+                    <img className="wd-display-pic" src={`/images/${tuit.image}`}/>
                 </div>
                 <div className="col-10 ml-2">
                     <div>

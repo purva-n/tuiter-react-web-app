@@ -1,16 +1,23 @@
 import React, {useState} from "react";
-import {useDispatch} from "react-redux";
-import {createTuit} from "../tuits/tuits-reducer";
+import {useDispatch, useSelector} from "react-redux";
+import {createTuitThunk}
+    from "../../services/tuits-thunks";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
+    const profile = useSelector((state) => state.profile);
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
-            tuit: whatsHappening
+            tuit: whatsHappening,
+            handle: profile.handle,
+            userName: profile.name,
+            title: "A random thought",
+            image: "owner.png",
+            time: '1h'
         }
         if(newTuit.tuit.length > 0) {
-            dispatch(createTuit(newTuit));
+            dispatch(createTuitThunk(newTuit));
         }
     }
     return (
